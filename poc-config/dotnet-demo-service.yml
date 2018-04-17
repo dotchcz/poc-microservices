@@ -1,8 +1,3 @@
-﻿---
-applications:
-- name: poc-microservice-api
-  disk_quota: 1536M
-  buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git
-  services:
-    - ConfigServerInstance
-    - ServiceRegistryInstance
+﻿eureka:
+  client:
+    shouldRegisterWithEureka: false
